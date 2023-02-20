@@ -49,10 +49,10 @@ spec:
       type: ManagedClusterConditionAvailable
   clusterSelector:
     matchExpressions:
-      - key: name
+      - key: stage
         operator: In
         values:
-          - local-cluster
+          - development
 ---
 apiVersion: policy.open-cluster-management.io/v1
 kind: PlacementBinding
