@@ -42,9 +42,7 @@ apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
   name: ns-label-tester-placement
-  namespace: default
-  labels:
-    global-hub.open-cluster-management.io/local-resource: "True"    
+  namespace: default 
 spec:
   clusterConditions:
     - status: "True"
