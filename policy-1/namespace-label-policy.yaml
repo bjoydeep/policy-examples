@@ -43,6 +43,8 @@ kind: PlacementRule
 metadata:
   name: ns-label-tester-placement
   namespace: default
+  labels:
+    global-hub.open-cluster-management.io/local-resource: "True"    
 spec:
   clusterConditions:
     - status: "True"
